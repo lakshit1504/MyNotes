@@ -2,7 +2,7 @@ import React, { useContext, useEffect,useRef,useState } from "react";
 import noteContext from "../context/notes/notesContext";
 import NoteItem from "./NoteItem";
 import { AddNote } from "./AddNote";
-import {Navigate, useNavigate} from 'react-router-dom'
+import { useNavigate} from 'react-router-dom'
 
 export default function Notes() {
   const navigate= useNavigate();
