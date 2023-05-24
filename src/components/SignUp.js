@@ -21,8 +21,8 @@ export default function SignUp() {
   console.log(json)
   if(json.success){
       // set and save authtoken
-      localStorage.setItem('token',json.authtoken);
-      navigate('/login');
+      localStorage.setItem('token',json.authToken);
+      navigate('/');
   }
   else{
     alert("invalid credentials")
