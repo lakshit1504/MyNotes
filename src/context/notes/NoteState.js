@@ -3,7 +3,7 @@ import NoteContext from "./notesContext";
 import { json } from "react-router-dom";
 
 const NoteState=(props)=>{
-    let host="http://localhost:8080"
+    let host="https://mynotes-api-047i.onrender.com"
     const notesinitial=[]
       const [notes, setNotes] = useState(notesinitial)
 
