@@ -22,7 +22,7 @@ export default function SignUp() {
   if(json.success){
       // set and save authtoken
       localStorage.setItem('token',json.authtoken);
-      navigate('/');
+      navigate('/login');
   }
   else{
     alert("invalid credentials")
