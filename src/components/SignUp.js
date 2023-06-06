@@ -3,9 +3,9 @@ import { useNavigate} from 'react-router-dom'
 
 export default function SignUp() {
 
-  const [credentials, setCredentials] = useState({name:"",email:"",password:"",cpassword:""})
+  const [credentials, setCredentials] = useState({name:"",email:"",password:""})
   const navigate= useNavigate();
-  const {name,email,password,cpassword}=credentials;
+  const {name,email,password}=credentials;
 
   const handleSubmit=async(e)=>{
     e.preventDefault();
@@ -55,10 +55,7 @@ export default function SignUp() {
           <input type="password" className="form-control" name="password" value={password} id="password" autoComplete="on" onChange={onchange}/>
         </div>
 
-        <div className="mb-3">
-          <label htmlFor="cpassword" className="form-label">Confirm Password</label>
-          <input type="cpassword" className="form-control" value={cpassword} name="cpassword" id="cpassword" onChange={onchange}/>
-        </div>
+       
 
          
         <button type="submit" className="btn btn-dark">Submit</button>
